@@ -56,7 +56,7 @@ var questions = [questionOne = {
 var score=0;
 
 function fandomQuiz(question,options,answer){
-  console.log(question);
+  console.log(chalk.cyanBright(question));
   var yourAnswer = readlineSync.keyInSelect(options,"Enter option number:",{cancel : false});
   if(options[yourAnswer]===answer){
     score++;
